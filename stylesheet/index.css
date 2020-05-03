@@ -1,0 +1,96 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container {
+  width: 50%;
+  padding: 20px;
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.51);
+  background-color: #eee;
+  margin-bottom: 30px;
+}
+
+.upload-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.upload-btn:focus {
+  outline: none;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-container {
+  width: 95%;
+}
+.button-container {
+  padding: 10px;
+  width: 10%;
+  text-align: center;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+.prev-btn:focus,
+.next-btn:focus {
+  outline: none;
+}
+
+.slider-item-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-item {
+  width: 18%;
+  color: black;
+  font-size: 14px;
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.51);
+  background-color: #eee;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p {
+  margin: 4px;
+  font-size: 16px;
+}
+
+.disabled {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  opacity: 0.5;
+  pointer-events: none;
+}

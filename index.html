@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>csv to slider</title>
+    <link rel = "stylesheet"
+   type = "text/css"
+   href = "./stylesheet/index.css" />
+ 
+ </head>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="title-container">
+        <h3>
+          CSV TO SLIDER
+        </h3>
+      </div>
+
+      <div class="form-container">
+
+        <form>
+          <label>Select CSV to upload :</label>
+          <input
+            type="file"
+            name="fileToUpload"
+            id="fileToUpload"
+            accept=".csv"
+            
+          />
+          <input
+            type="button"
+            value="Upload CSV"
+            name="uploadCSV"
+            onclick="submitAction()"
+            class="upload-btn"
+          />
+        </form>
+      </div>
+
+
+      <div id="slider-container" class="slider-container">
+        
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/index.js"></script>
+</html>
