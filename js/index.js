@@ -126,19 +126,24 @@ function displaySliderContent(paginatedData) {
   slideItemContainer.innerHTML = "";
 
   paginatedData.forEach((slide) => {
+    let slideKeys = Object.keys(slide);
     let slideItem = document.createElement("div");
     slideItem.setAttribute("class", "slider-item");
-    const slideContent = `
-                        <p>
-                        ${slide.firstName}
-                        </p>
-                        <p>
-                        ${slide.lastName}
-                        </p>
-                        <p>
-                        ${slide.age}
-                        </p>
-                              `;
+    let slideContent = "";
+    slideKeys.forEach((column) => {
+      slideContent += `<p>${column} : ${slide[column]}</p>`;
+    });
+    // const slideContent = `
+    //                     <p>
+    //                     ${slide.firstName}
+    //                     </p>
+    //                     <p>
+    //                     ${slide.lastName}
+    //                     </p>
+    //                     <p>
+    //                     ${slide.age}
+    //                     </p>
+    //                           `;
     slideItem.innerHTML = slideContent;
     slideItemContainer.appendChild(slideItem);
   });
